@@ -11,7 +11,7 @@ export const createApp = () => {
 
   createRouter(app);
 
-  app.listen(port, () => {
+  app.listen(port, '0.0.0.0', () => {
     console.log(`Сервер запущен на порте: ${port}`);
   });
 };
