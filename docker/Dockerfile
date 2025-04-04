@@ -5,6 +5,6 @@ WORKDIR /app
 COPY ./app/package.json ./
 COPY app .
 
-RUN rm -rf node_modules && npm install && npm run ui-build
+RUN rm -rf node_modules && npm install && npm install -g nodemon && npm run ui-build
 
-CMD ["./node_modules/.bin/nodemon", "./app.js"]
+CMD ["nodemon", "./app.js"]
