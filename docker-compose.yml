@@ -12,8 +12,5 @@ services:
     ports:
       - "${PORT}:${DOCKER_PORT}"
     volumes:
-      - ./app:/app
-    environment:
-      - PORT=${PORT}
-      - DOCKER_PORT=${DOCKER_PORT}
-      - DOCS_DIR=${DOCS_DIR}
+      - ./app/private:/app/private
+      - /app/private/ui
