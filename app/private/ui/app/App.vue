@@ -1,17 +1,11 @@
 <script setup>
-import { onMounted } from 'vue';
-import axios from 'axios';
-
-const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
-
-onMounted(() => {
-  console.log(import.meta.env);
-  axios.get(`${apiUrl}/api/tree`).then((result) => {
-    console.log(result.data);
-  });
-});
+import '../assets/styles/app.scss';
+import Default from "../layouts/Default.vue";
+// const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 </script>
 
 <template>
-  <h1>Hello Worlddsf {{ apiUrl }}</h1>
+  <Default>
+    <RouterView />
+  </Default>
 </template>

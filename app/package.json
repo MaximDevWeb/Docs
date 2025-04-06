@@ -21,10 +21,13 @@
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "nodemon": "^3.1.9",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "prettier": "^3.5.3",
+    "sass-embedded": "^1.86.3",
     "vite": "^6.2.0"
   }
 }
